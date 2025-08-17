@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comment | Sasaki To Miyano Fandom</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html, body {
+                box-sizing: border-box;
+            }
+            body, .navbar, footer {
+                padding-left: env(safe-area-inset-left);
+                padding-right: env(safe-area-inset-right);
+                padding-top: env(safe-area-inset-top);
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+            body { 
+                background:
+                    url('sasaki to miyano.jfif') left top no-repeat,
+                    url('sasaki to miyano2.jfif') right top no-repeat;
+                background-repeat: no-repeat;
+                background-size: auto;
+                margin: 0;
+                padding: 0;
+            }
+            .navbar {
+                display: flex;
+                background-color: blue;
+                overflow: hidden;
+            }
+            .navbar a {
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+                text-align: center;
+                
+            }
+            .navbar a:hover {
+                background-color: #575757;
+            }
+            .comment-section {
+                background: rgba(255,255,255,0.8);
+                margin: 40px auto;
+                max-width: 600px;
+                padding: 30px;
+                border-radius: 12px;
+            }
+            .comment-section h2 {
+                margin-top: 0;
+            }
+            .comment-form label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+            .comment-form input,
+            .comment-form textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                font-size: 1em;
+            }
+            .comment-form button {
+                background: #333;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 1em;
+            }
+            .comment-form button:hover {
+                background: #575757;
+            }
+            footer {
+                text-align: center;
+                padding: 16px 0;
+                background: rgba(51,51,51,0.8);
+                color: #fff;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="content.html">Content</a>
+            <a href="characters.html">Characters</a>
+            <a href="comment.html">Comment</a>
+        </div>
+        <div class="comment-section">
+            <h2>Leave a Comment</h2>
+            <form class="comment-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" rows="5" placeholder="Your comment"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p style="font-size:0.95em; color:#555; margin-top:18px;">
+            </p>
+        </div>
+        <footer>
+            &copy; 2025 Sasaki To Miyano Fandom. All rights reserved.
+        </footer>
+    </body>
+</html>
